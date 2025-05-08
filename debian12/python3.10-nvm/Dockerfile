@@ -5,7 +5,7 @@ FROM debian:bookworm
 RUN useradd -m test
 
 # Copy your setup script into the container
-COPY python3.10/setup.sh /root/setup.sh
+COPY python3.10-nvm/setup.sh /root/setup.sh
 
 # Pre-install basic deps
 RUN apt update && apt install -y sudo wget gnupg curl
